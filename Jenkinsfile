@@ -7,14 +7,5 @@ pipeline {
       }
     }
 
-    stage('allocate') {
-      steps {
-        node(label: 'node') {
-          echo 'asdfasdf'
-        }
-
-      }
-    }
-
   }
 }
