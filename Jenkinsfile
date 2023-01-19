@@ -1,11 +1,20 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+  agent any
+  stages {
+    stage('sleep') {
+      steps {
+        sleep 5
+      }
     }
+
+    stage('allocate') {
+      steps {
+        node(label: 'node') {
+          echo 'asdfasdf'
+        }
+
+      }
+    }
+
+  }
 }
