@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Enviroment') {
+      steps {
+        echo 'hello, syki'
+      }
+    }
+
   }
 }
